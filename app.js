@@ -204,3 +204,27 @@ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
 // Add a new element, "Cloud City" to the array
     ourClass.push("Cloud City");
     console.log(ourClass);
+
+// Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
+
+// Given the following array: const myArray = [5, 10, 500, 20]
+const myArray = [5, 10, 500, 20];
+
+// Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+    myArray.push("Aegon");
+    myArray.push("End of");
+
+// Remove the 5from the beginning of the array.
+    myArray.shift();
+
+// Add the string "Bob Marley"to the beginning of the array.
+    myArray.unshift("Bob Marley");
+
+// Remove the string of your choice from the end of the array.
+//    delete myArray[myArray.indexOf("Aegon")];
+myArray.splice(myArray.indexOf("Aegon"),1);
+console.log(myArray);
+
+// Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+    myArray.reverse();
+    console.log(myArray);
