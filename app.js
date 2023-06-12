@@ -394,3 +394,77 @@ let getTwoLengths = (x,y) => {
 }
 
 console.log(getTwoLengths("test", "aBunchOfLetters"));
+
+// Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// => [5, 4, 2, 2, 4]
+
+let getMultipleLengths = (x) => {
+
+    let numArr = [];
+
+    for (let i = 0; i<x.length;i++){
+        numArr[i] = x[i].length;
+    }
+
+    return numArr;
+
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+// Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, 
+// it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it 
+// with larger values in each of the three locations.
+
+// console.log(maxOfThree(6, 9, 1));
+// => 9
+
+// Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, 
+// we need you to submit a solution that does not use Math.max().
+
+let maxOfThree = (x,y,z) => {
+
+    if (x>=y && x>=z){
+        return x;
+    } else if (y>=x && y>=z){
+        return y;
+    } else if (z>=x && z>=y){
+        return z;
+    }
+
+}
+console.log(maxOfThree(16, 9, 1));
+console.log(maxOfThree(6, 19, 1));
+console.log(maxOfThree(6, 9,11));
+console.log(maxOfThree(6, 9, 9));
+console.log(maxOfThree(9, 9, 1));
+
+// Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. 
+// In case of a tie, the method should return the word that appears first in the array.
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// => "Peanutbutter"
+
+let printLongestWord = (strings) => {
+
+    let highest = 0;
+    let longestString;
+
+    //loop through array variable to determine the longest string
+    for (i = 0; i<strings.length;i++){
+
+        //check if highest count is more or less than current string
+        if (highest<strings[i].length){
+     
+            highest = strings[i].length;
+            longestString = strings[i];
+          
+        }
+    }
+        return `Longest string is ${longestString} and is ${highest} characters long`;
+
+}
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
