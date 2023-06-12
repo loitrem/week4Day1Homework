@@ -167,3 +167,13 @@ console.log("bank account total is $" + bank_account);
     }
 // Check your work! Your bank_account should have $10,100 in it.
 console.log("bank account total is $" + bank_account);
+
+// What are the things in an array called?
+    //objects
+
+// Do Arrays guarantee those things will be in order?
+    // yes
+// What real-life thing could you model with an array?
+ // to do list
+
+//  Create an array that contains three quotes and store it in a variable called quotes
