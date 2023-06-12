@@ -228,3 +228,23 @@ console.log(myArray);
 // Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
     myArray.reverse();
     console.log(myArray);
+
+//     Create a variable that contains an integer.
+
+// Write an if ... elsestatement that:
+
+// console.log()s "little number" if the number is entered is less than 100
+    let num = 50;
+    if (num<100){
+        console.log("little number");
+    } else {
+        console.log("big number");
+    }
+
+// console.log()s big numberif the number is greater than or equal to 100.
+num = 150;
+if (num>100){
+    console.log("big number");
+} else {
+    console.log("little number");
+}
