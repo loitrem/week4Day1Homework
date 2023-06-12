@@ -353,3 +353,44 @@ console.log(printGreeting("Erik"));
 let printCoolthat = (name) => {
     console.log(`${name} is cool`);
 }
+
+// Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
+
+// console.log(calculateCube(5));
+// => 125
+
+let calculateCube = (num) => {
+    return Math.pow(num, 3)
+}
+console.log(calculateCube(5));
+
+// Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+
+// console.log(isVowel("a"));
+// => true
+
+let isVowel = (char) => {
+    if (char==='a'||char==='e'||char==='i'||char==='o'||char==='u'||char==='y') {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+console.log(isVowel("a"));
+console.log(isVowel("w"));
+console.log(isVowel("i"));
+
+// Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// => [4, 13]
+
+let getTwoLengths = (x,y) => {
+
+    let arrayLength = [x.length, y.length];
+    return arrayLength;
+}
+
+console.log(getTwoLengths("test", "aBunchOfLetters"));
