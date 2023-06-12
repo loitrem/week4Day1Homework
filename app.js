@@ -177,3 +177,4 @@ console.log("bank account total is $" + bank_account);
  // to do list
 
 //  Create an array that contains three quotes and store it in a variable called quotes
+    let quotes = ["quote 1", "quote 2", "quote 3"];
