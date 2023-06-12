@@ -248,3 +248,24 @@ if (num>100){
 } else {
     console.log("little number");
 }
+
+// Write an if ... else if ... elsestatement:
+
+// console.log()little numberif the number entered is less than 5.
+// If the number entered is more than 10, log big number.
+// Otherwise, log "monkey".
+    number = [7,2,15];
+    console.log("===============================================");
+
+    for (let i = 0;i<number.length;i++) {
+        let num = number[i];
+       if (num<5){
+        console.log("little number");
+        } else if (num > 10) {
+            console.log("big number");
+        }
+        else {
+            console.log("Monkey");
+        } 
+    };
+    
