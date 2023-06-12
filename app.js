@@ -122,3 +122,13 @@ console.log(48 !== '48');
         }
             
     }
+
+// For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
+for (i=0;i<=100;i++){
+    if (i%5===0){
+        console.log("I found a " + i + " High five!");
+    } else {
+        console.log(i);
+    }
+        
+}
