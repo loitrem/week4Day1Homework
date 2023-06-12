@@ -178,3 +178,16 @@ console.log("bank account total is $" + bank_account);
 
 //  Create an array that contains three quotes and store it in a variable called quotes
     let quotes = ["quote 1", "quote 2", "quote 3"];
+
+// Given the following array const randomThings = [1, 10, "Hello", true]
+    const randomThings = [1, 10, "Hello", true];
+
+// How do you access the 1st element in the array?
+    randomThings[0];
+
+// Change the value of "Hello"to "World"
+    randomThings[2] = "World";
+    
+
+// Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+    console.log(randomThings);
