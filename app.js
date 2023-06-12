@@ -329,3 +329,27 @@ console.log("Thom is looking fierce in a " + thomsCloset[1][0] + ", " + thomsClo
 // Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 thomsCloset[1][2] = "Footie Pajamas";
 console.log(thomsCloset[1]);
+
+// Do you think you could write a function called printGreetingwith a parameter namethat returns a greeting with the argument interpolated into the greeting?
+
+// Like so?
+
+// console.log(printGreeting("Slimer"));
+// => Hello there, Slimer!
+
+// You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
+
+let printGreeting = (name) => {
+    return `Hello there, ${name}!`;
+}
+
+console.log(printGreeting("Erik"));
+
+// Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
+
+// console.log(printCool("Captain Reynolds"));
+// => "Captain Reynolds is cool";
+
+let printCoolthat = (name) => {
+    console.log(`${name} is cool`);
+}
