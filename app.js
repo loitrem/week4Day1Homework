@@ -561,3 +561,37 @@ updateUser();
 console.log("age after updateUser() : " + user.age);
 
 console.log("age after oldAndLoud() : " + oldAndLoud(user));
+
+////// cat combinator ////////////////////////////////////////
+
+const cat1 = {
+    name: "Abby",
+    breed: "Burmilla",
+    age: 5
+}
+
+console.log(cat1.age);
+console.log(cat1.breed);
+
+const cat2 = {
+    name: "Babur",
+    breed: "Toyger",
+    age: 6
+}
+
+const combineCats = (mama, papa) => {
+
+    let comboCat = {
+        name: mama.name+papa.name,
+        age: 1,
+        breed: mama.breed + "-" + papa.breed
+    }
+
+    return comboCat;
+}
+console.log("////////////////////// COMBINECATS //////////////////////////////////////////");
+console.log(combineCats(cat1, cat2));
+console.log("////////////////////// COMBINECATS USING COMBINECATS AS ITS OWN ARGUEMENT //////////////////////////////////////////");
+console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+console.log("////////////////////// COMBINECATS USING COMBINECATS AS ITS OWN ARGUEMENT 3 levels deep //////////////////////////////////////////");
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
